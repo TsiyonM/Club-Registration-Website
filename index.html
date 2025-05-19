@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Incubation Center</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="STEM Logo.jpg" alt="School Logo" width="40" height="40">
+                <span class="ms-2">STEM Incubation Center's <br> Club Coordination</span>
+            </div>
+            <nav class="navbar-nav">
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="#Register">Register</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="Home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="overlay"></div>
+        <div class="glass-box text-center">
+            <h2 class="Text display-4 fw-bold mb-4">Welcome to STEM Incubation Center's<br>Club Coordination</h2>
+            <p class="text lead mb-4">Join a club, explore opportunities, and shape your future</p>
+            <a href="Explore.html" class="btn">Explore</a>
+        </div> 
+    </section>
+
+    
+    <section id="Register" class="register-section">
+       
+        <div class="containerr">
+            <img src="RegPic.webp" alt="Register" class="register-img">
+
+            <form id="registrationForm">
+                
+                <div class="form-section" id="section1">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" required>
+                </div>
+    
+                <div class="form-section hidden" id="section2">
+                    <label for="father">Father's name:</label>
+                    <input type="text" id="father" required>
+                </div>
+    
+                <div class="form-section hidden" id="section3">
+                    <label for="grade">Grade:</label>
+                    <select id="grade" required>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+    
+                <div class="form-section hidden" id="section4">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+    
+                <div class="form-section hidden" id="section5">
+                    <label for="telegram">Telegram username:</label>
+                    <input type="text" id="telegram" required>
+                </div>
+    
+                <div class="form-section hidden" id="section6">
+                    <h2 for="club">Which clubs do you want to join?</h2>
+                    <form>
+                    <select id="club" >
+                        <input class="form-check-input mt-0" type="checkbox" value="AI club" aria-label="Checkbox for following text input">
+                        <label for="aerospaceClub" class="form-check-label">AI club</label>
+
+                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                        <label for="aerospaceClub" class="form-check-label">Aerospace club</label>
+
+                        <input class="form-check-input mt-0" type="checkbox" value="Robotics club" aria-label="Checkbox for following text input">
+                        <label for="aerospaceClub" class="form-check-label">Robotics club</label>
+
+                        <input class="form-check-input mt-0" type="checkbox" value="Community Service club" aria-label="Checkbox for following text input">
+                        <label for="aerospaceClub" class="form-check-label">Community Service club</label>
+
+                        <input class="form-check-input mt-0" type="checkbox" value="Journalism club" aria-label="Checkbox for following text input">
+                        <label for="aerospaceClub" class="form-check-label">Journalism club</label>
+
+                        <input class="form-check-input mt-0" type="checkbox" value="Debate club" aria-label="Checkbox for following text input">
+                        <label for="aerospaceClub" class="form-check-label">Debate club</label>
+
+
+                        
+                    </select>
+                    
+                </div>
+    
+                <div class="buttons">
+                    <button type="button" id="goBackBtn" onclick="goBack()">Go Back</button>
+                    <button type="button" id="nextBtn" onclick="nextQuestion()">Next</button>
+                    <button type="submit" id="submitBtn" class="hidden">Submit</button>
+                </div>
+                <p id="successMessage" style="display: none; color: green;">You are successfully registered!</p>
+    
+            </form>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+    <section id="Contact">
+    
+        <div class="containerrr">
+            <h2>Contact us</h2>
+            <form id="contactForm" action="">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Your message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <footer>
+            <p>&copy; 2025 STEM Incubation Center. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+
+    <section>
+        
+    </section>
+    
+</body>
+</html>
